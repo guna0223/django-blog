@@ -1,0 +1,19 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block content %}
+
+<article class="post-detail">
+    <h1>{{ post.title }}</h1>
+    <p class="post-meta">
+        <strong>Author:</strong> {{ post.author }} <br>
+        <strong>Published:</strong> {{ post.created_at|date:"F d, Y" }}
+    </p>
+    <div class="post-body">
+        {{ post.content }}
+    </div>
+    <a href="{% url 'mainapp:post_list' %}" class="btn btn-secondary mt-4">
+        Back to Blog
+    </a>
+</article>
+
+{% endblock %}
