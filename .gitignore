@@ -1,0 +1,10 @@
+# Virtual Environment
+*virt/
+.virt/
+
+# Database
+*.sqlite3
+
+# Migrations
+*/migrations/
+!*/migrations/__init__.py
