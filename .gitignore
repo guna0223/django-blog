@@ -1,10 +1,6 @@
-# Virtual Environment
-*virt/
-.virt/
-
-# Database
-*.sqlite3
-
-# Migrations
-*/migrations/
-!*/migrations/__init__.py
+# Django generated files
+__pycache__/
+*.pyc
+staticfiles/
+db.sqlite3
+.env
